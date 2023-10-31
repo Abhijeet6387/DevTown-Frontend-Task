@@ -1,0 +1,76 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Additional styles for the ProductList and Product components */
+.ProductListContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: auto;
+  padding: 10px 0;
+}
+
+.ProductCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 220px;
+}
+
+.ProductImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.ProductTitle {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.ProductDescription {
+  font-size: 1rem;
+  color: #555;
+}
+
+.ProductPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Pagination button styles */
+.PaginationContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.PageButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Responsive styles for mobile layout */
+@media screen and (max-width: 768px) {
+  .ProductListContainer {
+    flex-wrap: wrap;
+  }
+
+  .ProductCard {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
